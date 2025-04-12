@@ -31,48 +31,32 @@ Hotel Helper KV 数据库是一个专为酒店信息管理设计的键值（Key 
 
 ## 四、项目结构
 ```plaintext
-HotelHelperKV/
+hotel-helper-kv/
 ├── src/
 │   ├── main/
-│   │   ├── java/
-│   │   │   └── com/
-│   │   │       └── Hrup/
-│   │   │           └── HotelHelper/
-│   │   │               ├── database/
-│   │   │               │   ├── KVDatabase.java
-│   │   │               │   └── DatabaseManager.java
-│   │   │               ├── model/
-│   │   │               │   ├── Room.java
-│   │   │               │   ├── Customer.java
-│   │   │               │   └── Reservation.java
-│   │   │               ├── service/
-│   │   │               │   ├── RoomService.java
-│   │   │               │   ├── CustomerService.java
-│   │   │               │   └── ReservationService.java
-│   │   │               └── util/
-│   │   │                   ├── ConfigLoader.java
-│   │   │                   └── Logger.java
+│   │   ├── com/
+│   │   │   └── Hrup/
+│   │   │       └── hotelhelper/
+│   │   │           ├── client/
+│   │   │           │   └── ClientMain.java
+│   │   │           ├── server/
+│   │   │           │   ├── ServerMain.java
+│   │   │           │   ├── ClientHandler.java
+│   │   │           │   └── Database.java
+│   │   │           ├── datastructures/
+│   │   │           │   ├── DoublyLinkedList.java
+│   │   │           │   └── ListNode.java
+│   │   │           ├── common/
+│   │   │           │   ├── Command.java
+│   │   │           │   ├── CommandParser.java
+│   │   │           │   └── Protocol.java
+│   │   │           └── config/
+│   │   │               ├── ConfigLoader.java
+│   │   │               └── Logger.java
 │   │   └── resources/
-│   │       └── config.properties
-│   └── test/
-│       └── java/
-│           └── com/
-│               └── Hrup/
-│                   └── HotelHelper/
-│                       ├── database/
-│                       │   ├── KVDatabaseTest.java
-│                       │   └── DatabaseManagerTest.java
-│                       ├── model/
-│                       │   ├── RoomTest.java
-│                       │   ├── CustomerTest.java
-│                       │   └── ReservationTest.java
-│                       ├── service/
-│                       │   ├── RoomServiceTest.java
-│                       │   ├── CustomerServiceTest.java
-│                       │   └── ReservationServiceTest.java
-│                       └── util/
-│                           ├── ConfigLoaderTest.java
-│                           └── LoggerTest.java
+│   │       ├── hotelhelper.properties
+│   │       ├── command_help.txt
+│   │       └── persistence.aof
 ├── pom.xml
 └── README.md
 ```
